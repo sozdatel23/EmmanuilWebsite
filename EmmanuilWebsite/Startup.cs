@@ -11,6 +11,7 @@ namespace EmmanuilWebsite
 		public IConfiguration Configuration { get; }
 		public Startup(IConfiguration configuration) => Configuration = configuration;
 
+		[Obsolete]//может в коммент поместить???
 		public void ConfigureServices(IServiceCollection services)
 		{
 			//подключение конфига из appsettings.json
